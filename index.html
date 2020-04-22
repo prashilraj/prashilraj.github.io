@@ -536,21 +536,35 @@
 
           </div>          	
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            	<br>
-            	<form action="https://airform.io/prashilrajshrestha@gmail.com" method="post">
-            	<h4>PLEASE FEEL FREE TO CONTACT ME USING FOLLOWING FORM BELOW.</h4>
-            	<label>Your personal information will be based on our “privacy policy” and will not use it at all, except for this service and related purposes.</label>
-            	<label for="exampleInputEmail1">Name</label><br>
-  				<input type="text" name="name" placeholder="Enter your Name"><br><br>
-  				<label for="exampleInputEmail1">Email address</label><br>
-  				<input type="text" email="name" placeholder="Enter your Email"><br><br>
-  				<label for="exampleInputEmail1">Phone Number</label><br>
-  				<input type="text" Phone="name" placeholder="Enter your Phone Number"><br><br>
-  				<label for="exampleInputEmail1">Message</label><br>
-  				<textarea name="message" placeholder="Enter your message"></textarea><br><br>
- 				<button>Send</button>
-			</form>
-                
+            <form action="https://airform.io/prashilrajshrestha@gmail.com" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
 
